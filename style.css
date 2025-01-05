@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Patrick+Hand&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 400;
+}
+
+body{
+ 
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+background-color: #add0ec;
+
+}
+.calculator-structure {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, 50%);
+    top: 50%;
+    left: 50%;
+    background-color: #FD98C3;
+    padding: 8px;
+    width: 200px;
+    border-radius: 12px;
+    border-right: 3px solid #B15168;
+    border-bottom: 3px solid #B15168;
+}
+
+
+#display {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #2e1d0d;
+    font-weight: bold;
+}
+
+.result-section {
+    height: 50px;
+    background-color: #ECFBFF;
+    width: 85%;
+    margin: 7PX;
+    border: solid 3px #80293d;
+    border-radius: 5px;
+
+}
+
+
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+     
+}
+.btn{
+    width: 40px;
+    height: 40px;
+   margin: 2px;
+   background-color: #D0EEFD;
+   border: 1px solid black;
+   border-radius: 5px;
+   outline: none;
+   position: relative;
+   font-size: 1.5rem;
+   color: #2e1d0d;
+   cursor: pointer;
+    
+}
+
+.btn::before{
+content: "";
+height: 37px;
+width:37px;
+   right: 0;
+   bottom: 0px;
+   border-radius: 5px;
+    position: absolute;
+    border-right: 2px solid #235B74 ;
+    border-bottom: 2px solid #235B74;
+}
+
